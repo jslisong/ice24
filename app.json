@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/game/game"
+  ],
+  "window": {
+    "navigationBarTitleText": "冰火24点",
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#06254c"
+  }
+}
