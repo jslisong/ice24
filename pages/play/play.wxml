@@ -1,0 +1,39 @@
+<!--pages/game/game.wxml-->
+
+<View class="gameboard">
+	<View class="row" >
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+	</View>
+  
+	<View class="row" >
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column" bindtap="showdlg">10</button>
+	</View>
+	<View class="row" >
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+    <view>  
+    <image src="/pages/images/collect.png" class="img-style" animation="{{animCollect}}" bindtap="collect"></image>  
+    <image src="/pages/images/transpond.png" class="img-style" animation="{{animTranspond}}" bindtap="transpond"></image>  
+    <image src="/pages/images/input.png" class="img-style" animation="{{animInput}}" bindtap="input"></image>  
+    <image src="/pages/images/plus.png" class="img-plus-style" animation="{{animPlus}}" bindtap="plus"></image>  
+    </view>  
+	</View>
+	<View class="row" >
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+		<button class="column"></button>
+	</View>
+</View>

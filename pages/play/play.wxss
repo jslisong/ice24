@@ -1,0 +1,51 @@
+/* pages/game/game.wxss */
+.img-plus-style {  
+  height: 150rpx;  
+  width: 150rpx;  
+  position: absolute;  
+  bottom: 250rpx;  
+  right: 100rpx;  
+  z-index: 100;  
+}  
+  
+.img-style {  
+  height: 150rpx;  
+  width: 150rpx;  
+  position: absolute;  
+  bottom: 250rpx;  
+  right: 100rpx;  
+  opacity: 0;  
+}  
+
+/*棋盘*/
+.gameboard
+{
+  position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #bbada0;
+  
+	display: flex;
+	flex-direction: column;
+}
+
+.gameboard .row
+{
+	display: flex;
+	flex: 1;
+}
+
+.gameboard .row .column
+{
+	font-size: 80rpx;
+	color: #675e55;
+	flex: 1;
+	margin: 2rpx;
+	background-color: #cdc1b4;
+	border-radius: 60rpx;
+
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}

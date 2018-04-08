@@ -1,0 +1,25 @@
+/* pages/welcome/welcome.wxss */
+
+page{
+  height:100%;
+}
+
+.login{
+  height: 50%;
+}
+
+.entry{
+  height: 50%;
+  display: flex;
+}
+
+.entry button{
+  width: 50%;
+  font-size: 300%;
+  color: white;
+  background: #507090;
+}
+
+[button-hover] {
+  background-color: red;
+}

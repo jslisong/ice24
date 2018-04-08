@@ -1,0 +1,9 @@
+<!--pages/welcome/welcome.wxml-->
+
+<view class='login'> {{message}} 
+</view>
+
+<view class='entry'>
+<button bindtap = 'goPlay'>过关</button>
+<button bindtap = 'goFight'>打擂</button>
+</view>
