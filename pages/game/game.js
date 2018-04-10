@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    array: [{
+      idd: 1,
+      message: 'foo',
+    }, {
+      idd: 2,
+      message: 'bar'
+    }]
   },
 
   /**
@@ -62,5 +68,10 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+
+  goPlay: function(event){
+    console.log(event);
+    wx.navigateTo({ url: '../play/play' })
+  },
 })

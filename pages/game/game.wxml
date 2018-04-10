@@ -5,3 +5,6 @@
 <button>4</button>
 <button>5</button>
 <button>6</button>
+<button wx:for='{{array}}' wx:key="idd"  id='{{index}}' bindtap='goPlay'>  
+    {{index}}: {{item.message}} {{item.idd}}
+</button>

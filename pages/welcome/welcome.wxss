@@ -20,6 +20,6 @@ page{
   background: #507090;
 }
 
-[button-hover] {
+.button-hover {
   background-color: red;
 }
