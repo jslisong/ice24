@@ -1,12 +1,10 @@
 {
   "pages": [
-    "pages/welcome/welcome",
-    "pages/game/game",
     "pages/play/play"
   ],
   "window": {
     "navigationBarTitleText": "冰火24点",
     "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#507090"
+    "navigationBarBackgroundColor": "#579"
   }
 }

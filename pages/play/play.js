@@ -10,6 +10,12 @@ Page({
     animCollect: {},//item位移,透明度  
     animTranspond: {},//item位移,透明度  
     animInput: {},//item位移,透明度  
+    blk:[
+      [{}, {}, {}, {}, {},],
+      [{}, {}, {}, {}, {},],
+      [{}, {}, {}, {}, {},],
+      [{}, {}, {}, {}, {},],
+    ]
   },
   //点击弹出  
   plus: function () {

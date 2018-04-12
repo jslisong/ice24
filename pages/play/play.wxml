@@ -1,5 +1,46 @@
 <!--pages/game/game.wxml-->
 
+<view class='playboard'>
+  <view>
+    <button></button>
+    <button>?</button>
+    <button>?</button>
+    <button>?</button>
+    <button>?</button>
+  </view>
+  <view>
+    <text>第一步</text>
+  </view>
+  <view>
+    <button>?</button>
+    <button>+</button>
+    <button>?</button>
+    <button>=</button>
+    <button>?</button>
+  </view>
+  <view>
+    <text>第二步</text>
+  </view>
+  <view>
+    <button>?</button>
+    <button>+</button>
+    <button>?</button>
+    <button>=</button>
+    <button>?</button>
+  </view>
+  <view>
+    <text>第三步</text>
+  </view>
+  <view>
+    <button>?</button>
+    <button>+</button>
+    <button>?</button>
+    <button>=</button>
+    <button>24</button>
+  </view>      
+</view>
+
+<!-- 
 <View class="gameboard">
 	<View class="row" >
 		<button class="column"></button>
@@ -36,4 +77,5 @@
 		<button class="column"></button>
 		<button class="column"></button>
 	</View>
-</View>
+</View> 
+-->
