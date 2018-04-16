@@ -10,6 +10,7 @@ Page({
     animCollect: {},//item位移,透明度  
     animTranspond: {},//item位移,透明度  
     animInput: {},//item位移,透明度  
+    
     blk:[
       [{}, {}, {}, {}, {},],
       [{}, {}, {}, {}, {},],
