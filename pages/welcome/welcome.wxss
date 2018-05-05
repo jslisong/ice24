@@ -17,8 +17,12 @@ page{
 .login image{
   width: 128rpx;
   height: 128rpx;
-  margin: 20rpx;
+  margin-top: 30%;
   border-radius: 50%;
+}
+
+.login text{
+  margin-top: 4%;
 }
 
 .entry{
