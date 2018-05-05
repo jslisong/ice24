@@ -1,1 +1,12 @@
 /* pages/game/game.wxss */
+
+page{
+  background-color: #79b;
+}
+
+button{
+  display: flex;
+  flex:1;  
+  background-color: #579;
+  color: white;
+}

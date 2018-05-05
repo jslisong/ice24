@@ -35,10 +35,6 @@ page{
   width: 50%;
   font-size: 300%;
   color: white;
-  background-color: #507090;
+  background-color: #579;
   margin: 16rpx;
-}
-
-.button-hover {
-  background-color: red;
 }
