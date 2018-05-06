@@ -31,7 +31,7 @@ App({
 
   globalData:{
     userInfo: null,
-    gms:
+    levels:
     [
       [1, 5, 5, 5,],
       [2, 2, 7, 7,],

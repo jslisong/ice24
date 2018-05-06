@@ -1,43 +1,29 @@
 // pages/game/game.js
+
+var app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    gms: [
-      {
-        idd: 1,
-        das: [1,5,5,5],
-      },
-      {
-        idd: 2,
-        das:[2, 2, 7, 7],
-      },
-      {
-        idd: 3,
-        das:[2, 4, 10, 10],
-      },
-      {
-        idd: 4,
-        das:[3, 3, 8, 8],
-      },
-      {
-        idd: 5,
-        das:[4, 4, 7, 7],
-      },
-      {
-        idd: 6,
-        das:[4, 4, 10, 10],
-      },
-    ]
+    gms: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var games = []
+    var game = {}
+    for (var i = 0; i < app.globalData.levels.length; i++) {
+      game = { idd: i, das: app.globalData.levels[i]}
+      games.push(game)
+    }
+    this.setData({
+      gms: games
+    })
   },
 
   /**
