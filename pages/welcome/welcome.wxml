@@ -1,11 +1,11 @@
 <!--pages/welcome/welcome.wxml-->
 
 <view class='login'>
-  <image src="{{userInfo.avatarUrl}}"></image>
+  <image src='{{userInfo.avatarUrl}}'></image>
   <text>{{userInfo.nickName}}</text>
 </view>
 
 <view class='entry'>
-<button bindtap = 'goPlay'>过关</button>
-<button bindtap = 'goFight'>打擂</button>
+  <button bindtap = 'goGame'>过关</button>
+  <button bindtap = 'goFight'>打擂</button>
 </view>

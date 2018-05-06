@@ -1,5 +1,9 @@
 <!--pages/game/game.wxml-->
 
-<button wx:for='{{gms}}' id='{{index}}' bindtap='goPlay'>  
-    <view wx:for='{{item.das}}'>{{item}}</view>
+<button wx:for='{{gms}}' wx:key='idd' id='{{index}}' bindtap='goPlay'>
+  第{{item.idd}}关:
+  {{item.das[0]}}
+  {{item.das[1]}}
+  {{item.das[2]}}
+  {{item.das[3]}}
 </button>
