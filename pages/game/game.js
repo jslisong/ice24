@@ -89,8 +89,7 @@ Page({
 
   },
 
-  goPlay: function(event){
-    console.log(event);
-    wx.navigateTo({ url: '../play/play' })
+  goPlay: function(eve){
+    wx.navigateTo({ url: '../play/play?id=' + eve.target.id})
   },
 })
