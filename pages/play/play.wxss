@@ -59,3 +59,7 @@ page{
   opacity: 0;  
 }  
 
+.playboard view .btn_op {  
+  margin: 20rpx;  
+  border-radius: 50%;
+}

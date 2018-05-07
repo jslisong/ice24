@@ -13,9 +13,9 @@
   </view>
   <view>
     <button>?</button>
-    <button>+</button>
+    <button class='btn_op'>+</button>
     <button>?</button>
-    <button>=</button>
+    <button class='btn_op'>=</button>
     <button>?</button>
   </view>
   <view>
@@ -23,9 +23,9 @@
   </view>
   <view>
     <button>?</button>
-    <button>+</button>
+    <button class='btn_op'>+</button>
     <button>?</button>
-    <button>=</button>
+    <button class='btn_op'>=</button>
     <button>?</button>
   </view>
   <view>
@@ -33,9 +33,9 @@
   </view>
   <view>
     <button>?</button>
-    <button>+</button>
+    <button class='btn_op'>+</button>
     <button>?</button>
-    <button>=</button>
+    <button class='btn_op'>=</button>
     <button>24</button>
   </view>      
 </view>
