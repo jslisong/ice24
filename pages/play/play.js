@@ -1,4 +1,7 @@
 // pages/game/game.js
+
+var app = getApp()
+
 Page({
 
   /**
@@ -16,7 +19,24 @@ Page({
       [{}, {}, {}, {}, {},],
       [{}, {}, {}, {}, {},],
       [{}, {}, {}, {}, {},],
-    ]
+    ],
+
+    a0:'?',
+    b0:'?',
+    c0:'?',
+    d0:'?',
+
+    o1:'?',
+    a1:'?',
+    b1:'?',
+
+    o2:'?',
+    a2:'?',
+    b2:'?',
+
+    o3:'?',
+    a3:'?',
+    b3:'?',
   },
   //点击弹出  
   plus: function () {
@@ -110,6 +130,12 @@ Page({
    */
   onLoad: function (options) {
     var i = options.id
+    this.setData({
+      a0: app.globalData.levels[i][0],
+      b0: app.globalData.levels[i][1],
+      c0: app.globalData.levels[i][2],
+      d0: app.globalData.levels[i][3],
+    })
   },
 
   /**

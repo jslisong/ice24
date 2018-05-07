@@ -3,10 +3,10 @@
 <view class='playboard'>
   <view>
     <button></button>
-    <button>?</button>
-    <button>?</button>
-    <button>?</button>
-    <button>?</button>
+    <button>{{a0}}</button>
+    <button>{{b0}}</button>
+    <button>{{c0}}</button>
+    <button>{{d0}}</button>
   </view>
   <view>
     <text>第一步</text>
