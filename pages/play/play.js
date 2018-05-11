@@ -130,12 +130,14 @@ Page({
    */
   onLoad: function (options) {
     var i = options.id
-    this.setData({
-      a0: app.globalData.levels[i][0],
-      b0: app.globalData.levels[i][1],
-      c0: app.globalData.levels[i][2],
-      d0: app.globalData.levels[i][3],
-    })
+    if (i) {
+      this.setData({
+        a0: app.globalData.levels[i][0],
+        b0: app.globalData.levels[i][1],
+        c0: app.globalData.levels[i][2],
+        d0: app.globalData.levels[i][3],
+      })
+    }
   },
 
   /**
