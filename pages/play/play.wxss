@@ -26,6 +26,7 @@ page{
   flex-direction: column;
   justify-content: center; 
   text-indent:20rpx;
+  font-size: 120%;
 }
 
 .playboard view button
@@ -38,7 +39,7 @@ page{
   margin: 10rpx;  
 	border-radius: 20%;
   color: white;  
-	font-size: 200%;
+	font-size: 160%;
 }
 
 .img-plus-style {  
@@ -58,6 +59,10 @@ page{
   right: 100rpx;  
   opacity: 0;  
 }  
+
+.playboard view .btn_none {  
+  visibility: hidden;
+}
 
 .playboard view .btn_op {  
   margin: 20rpx;  
