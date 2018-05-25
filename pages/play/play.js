@@ -15,6 +15,7 @@ Page({
     animInput: {},//item位移,透明度  
     
     animationData: {},
+    vv: 'visible',
 
     a0:'?',
     b0:'?',
@@ -163,7 +164,7 @@ Page({
       this.setData({
         animationData: animation.export()
       })
-    }.bind(this), 1000)
+    }.bind(this), 5000)
   },
   
   /**
@@ -201,15 +202,12 @@ Page({
   
   },
 
-  showdlg: function(info){
-    wx.showActionSheet({
-      itemList: ['A', 'B', 'C'],
-      success: function (res) {
-        console.log(res.tapIndex)
-      },
-      fail: function (res) {
-        console.log(res.errMsg)
-      }
+  clickOp: function(obj){
+    console.log(obj)    
+
+    this.setData({
+      ll: obj.target.offsetLeft,
+      tt: obj.target.offsetTop,
     })
   }
 })

@@ -61,7 +61,7 @@ page{
 }  
 
 .playboard view .btn_none {  
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 
 .playboard view .btn_op {  

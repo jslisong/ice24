@@ -2,7 +2,7 @@
 
 <view class='playboard'>
   <view>
-    <button class='btn_none'></button>
+    <button class='btn_none' style='left:{{ll}}px; top:{{tt}}px'></button>
     <button>{{a0}}</button>
     <button>{{b0}}</button>
     <button>{{c0}}</button>
@@ -13,7 +13,7 @@
   </view>
   <view>
     <button>?</button>
-    <button class='btn_op' animation='{{animationData}}'>+</button>
+    <button class='btn_op' animation='{{animationData}}' bindtap='clickOp'>+</button>
     <button>?</button>
     <button class='btn_op'>=</button>
     <button>?</button>
