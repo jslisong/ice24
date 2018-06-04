@@ -1,15 +1,26 @@
 <!--pages/game/game.wxml-->
 
-<view class='playboard'>
+<view class='playboard' bindtap='clkBoard'>
+  <view>
+    <button wx:for='{{eleArray_1}}' wx:key='id' class='{{item.style}}'>
+    {{item.num}}
+    </button>
+  </view>
+  <view>
+    <text>第一步</text>
+  </view>
+  <view>
+    <text>第二步</text>
+  </view>
+  <view>
+    <text>第三步</text>
+  </view>
   <view>
     <button class='btn_none' style='left:{{ll}}px; top:{{tt}}px'></button>
     <button>{{a0}}</button>
     <button>{{b0}}</button>
     <button>{{c0}}</button>
     <button>{{d0}}</button>
-  </view>
-  <view>
-    <text>第一步</text>
   </view>
   <view>
     <button>?</button>
@@ -19,17 +30,11 @@
     <button>?</button>
   </view>
   <view>
-    <text>第二步</text>
-  </view>
-  <view>
     <button>?</button>
     <button class='btn_op'>+</button>
     <button>?</button>
     <button class='btn_op'>=</button>
     <button>?</button>
-  </view>
-  <view>
-    <text>第三步</text>
   </view>
   <view>
     <button>?</button>
@@ -39,16 +44,3 @@
     <button>24</button>
   </view>      
 </view>
-
-<!-- 
-<View class="gameboard">  
-	<View class="row" >
-	</View>
-    <image src="/pages/images/collect.png" class="img-style" animation="{{animCollect}}" bindtap="collect"></image>  
-    <image src="/pages/images/transpond.png" class="img-style" animation="{{animTranspond}}" bindtap="transpond"></image>  
-    <image src="/pages/images/input.png" class="img-style" animation="{{animInput}}" bindtap="input"></image>  
-    <image src="/pages/images/plus.png" class="img-plus-style" animation="{{animPlus}}" bindtap="plus"></image>  
-    </view>  
-	</View>
-</View> 
--->

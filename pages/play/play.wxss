@@ -50,21 +50,25 @@ page{
   right: 100rpx;  
   z-index: 100;  
 }  
-  
-.img-style {  
-  height: 150rpx;  
-  width: 150rpx;  
-  position: absolute;  
-  bottom: 250rpx;  
-  right: 100rpx;  
-  opacity: 0;  
-}  
 
-.playboard view .btn_none {  
-  /* visibility: hidden; */
-}
-
-.playboard view .btn_op {  
+.playboard view .op {  
   margin: 20rpx;  
   border-radius: 50%;
+}
+
+.playboard view .op_gray {  
+  margin: 20rpx;  
+  border-radius: 50%;
+}
+
+.playboard view .op_hidden {  
+  margin: 20rpx;  
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.playboard view .num { 
+}
+
+.playboard view .num_gray { 
 }

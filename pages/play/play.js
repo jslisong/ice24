@@ -8,32 +8,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isPopping: false,//是否已经弹出  
-    animPlus: {},//旋转动画  
-    animCollect: {},//item位移,透明度  
-    animTranspond: {},//item位移,透明度  
-    animInput: {},//item位移,透明度  
-    
-    animationData: {},
-    vv: 'visible',
+    eleArray_1: [
+      { id: 11, style: 'op_hidden' },
+      { id: 12, num: '?' },
+      { id: 13, num: '?' },
+      { id: 14, num: '?' },
+      { id: 15, num: '?', style: 'num'},
+    ],
 
-    a0:'?',
-    b0:'?',
-    c0:'?',
-    d0:'?',
-
-    o1:'?',
-    a1:'?',
-    b1:'?',
-
-    o2:'?',
-    a2:'?',
-    b2:'?',
-
-    o3:'?',
-    a3:'?',
-    b3:'?',
+    isPopping: false,
+    animOp: {},
+    anmiNum: {},
   },
+
+
   //点击弹出  
   plus: function () {
     if (this.data.isPopping) {
@@ -128,10 +116,10 @@ Page({
     var i = options.id
     if (i) {
       this.setData({
-        a0: app.globalData.levels[i][0],
-        b0: app.globalData.levels[i][1],
-        c0: app.globalData.levels[i][2],
-        d0: app.globalData.levels[i][3],
+        'eleArray_1[1].num': app.globalData.levels[i][0],
+        'eleArray_1[2].num': app.globalData.levels[i][1],
+        'eleArray_1[3].num': app.globalData.levels[i][2],
+        'eleArray_1[4].num': app.globalData.levels[i][3],
       })
     }
   },
@@ -200,6 +188,10 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  
+  clkBoard: function (obj) {
+    console.log(obj)    
   },
 
   clickOp: function(obj){
