@@ -2,7 +2,7 @@
 
 <view class='playboard' bindtap='clkBoard'>
   <view>
-    <button wx:for='{{eleArray_1}}' wx:key='id' class='{{item.style}}'>
+    <button wx:for='{{eleArray_1}}' wx:key='id' id='{{item.id}}' class='{{item.style}}'>
     {{item.num}}
     </button>
   </view>

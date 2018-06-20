@@ -10,9 +10,9 @@ Page({
   data: {
     eleArray_1: [
       { id: 11, style: 'op_hidden' },
-      { id: 12, num: '?' },
-      { id: 13, num: '?' },
-      { id: 14, num: '?' },
+      { id: 12, num: '?', style: 'num'},
+      { id: 13, num: '?', style: 'num'},
+      { id: 14, num: '?', style: 'num'},
       { id: 15, num: '?', style: 'num'},
     ],
 
@@ -112,8 +112,8 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    var i = options.id
+  onLoad: function (params) {
+    var i = params.id
     if (i) {
       this.setData({
         'eleArray_1[1].num': app.globalData.levels[i][0],
@@ -201,5 +201,24 @@ Page({
       ll: obj.target.offsetLeft,
       tt: obj.target.offsetTop,
     })
+
+    this.getAllRects()
+  },
+
+  getAllRects: function () {
+    wx.createSelectorQuery().selectAll('.num').boundingClientRect(function (rects) {
+      rects.forEach(function (rect) {
+        rect.id      // 节点的ID
+        rect.dataset // 节点的dataset
+        rect.left    // 节点的左边界坐标
+        rect.right   // 节点的右边界坐标
+        rect.top     // 节点的上边界坐标
+        rect.bottom  // 节点的下边界坐标
+        rect.width   // 节点的宽度
+        rect.height  // 节点的高度
+        console.log(rect) 
+      })
+    }).exec()
+
   }
 })
