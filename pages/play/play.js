@@ -153,6 +153,8 @@ Page({
         animationData: animation.export()
       })
     }.bind(this), 5000)
+
+    this.getAllRects()
   },
   
   /**
@@ -202,7 +204,6 @@ Page({
       tt: obj.target.offsetTop,
     })
 
-    this.getAllRects()
   },
 
   getAllRects: function () {
