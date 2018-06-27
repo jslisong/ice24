@@ -154,7 +154,7 @@ Page({
       })
     }.bind(this), 5000)
 
-    this.getAllRects()
+    this.getAllRects(this)
   },
   
   /**
@@ -206,20 +206,27 @@ Page({
 
   },
 
-  getAllRects: function () {
+  getAllRects: function (page) {
     wx.createSelectorQuery().selectAll('.num').boundingClientRect(function (rects) {
       rects.forEach(function (rect) {
-        rect.id      // 节点的ID
-        rect.dataset // 节点的dataset
-        rect.left    // 节点的左边界坐标
-        rect.right   // 节点的右边界坐标
-        rect.top     // 节点的上边界坐标
-        rect.bottom  // 节点的下边界坐标
-        rect.width   // 节点的宽度
-        rect.height  // 节点的高度
-        console.log(rect) 
+        page.setEleRect(rect)
       })
     }).exec()
 
+  },
+
+  setEleRect: function(rect) {    
+    var id = rect.id
+    var id_x = parseInt(id[0])
+    var id_y = parseInt(id[1])
+    switch(id_x){
+      case 1:
+        this.data.eleArray_1[id_y - 1].left = rect.left
+        break;
+      default:
+        break;
+    }
+
+    console.log(this.data.eleArray_1)
   }
 })
