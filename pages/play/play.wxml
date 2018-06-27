@@ -10,10 +10,25 @@
     <text>第一步</text>
   </view>
   <view>
+    <button wx:for='{{eleArray_2}}' wx:key='id' id='{{item.id}}' class='{{item.style}}'>
+    {{item.num}}
+    </button>
+  </view>
+  <view>
     <text>第二步</text>
   </view>
   <view>
+    <button wx:for='{{eleArray_3}}' wx:key='id' id='{{item.id}}' class='{{item.style}}'>
+    {{item.num}}
+    </button>
+  </view>
+  <view>
     <text>第三步</text>
+  </view>
+  <view>
+    <button wx:for='{{eleArray_4}}' wx:key='id' id='{{item.id}}' class='{{item.style}}'>
+    {{item.num}}
+    </button>
   </view>
   <view>
     <button class='btn_none' style='left:{{ll}}px; top:{{tt}}px'></button>

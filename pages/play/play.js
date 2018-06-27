@@ -15,6 +15,27 @@ Page({
       { id: 14, num: '?', style: 'num'},
       { id: 15, num: '?', style: 'num'},
     ],
+    eleArray_2: [
+      { id: 21, num: '?', style: 'num' },
+      { id: 22, num: '?', style: 'num' },
+      { id: 23, num: '?', style: 'num' },
+      { id: 24, num: '?', style: 'num' },
+      { id: 25, num: '?', style: 'num' },
+    ],
+    eleArray_3: [
+      { id: 31, num: '?', style: 'num' },
+      { id: 32, num: '?', style: 'num' },
+      { id: 33, num: '?', style: 'num' },
+      { id: 34, num: '?', style: 'num' },
+      { id: 35, num: '?', style: 'num' },
+    ],
+    eleArray_4: [
+      { id: 41, num: '?', style: 'num' },
+      { id: 42, num: '?', style: 'num' },
+      { id: 43, num: '?', style: 'num' },
+      { id: 44, num: '?', style: 'num' },
+      { id: 45, num: 24, style: 'num' },
+    ],
 
     isPopping: false,
     animOp: {},
@@ -222,6 +243,9 @@ Page({
     switch(id_x){
       case 1:
         this.data.eleArray_1[id_y - 1].left = rect.left
+        this.data.eleArray_1[id_y - 1].right = rect.right
+        this.data.eleArray_1[id_y - 1].top = rect.top
+        this.data.eleArray_1[id_y - 1].bottom = rect.bottom
         break;
       default:
         break;
