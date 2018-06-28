@@ -18,7 +18,8 @@
     <text>第二步</text>
   </view>
   <view>
-    <button wx:for='{{eleArray_3}}' wx:key='id' id='{{item.id}}' class='{{item.style}}'>
+    <button wx:for='{{eleArray_3}}' wx:key='id' id='{{item.id}}' class='{{item.style}}'
+    bindtap='clickEle'>
     {{item.num}}
     </button>
   </view>
@@ -39,23 +40,9 @@
   </view>
   <view>
     <button>?</button>
-    <button class='btn_op' animation='{{animationData}}' bindtap='clickOp'>+</button>
+    <button class='btn_op' animation='{{animationData}}'>+</button>
     <button>?</button>
     <button class='btn_op'>=</button>
     <button>?</button>
-  </view>
-  <view>
-    <button>?</button>
-    <button class='btn_op'>+</button>
-    <button>?</button>
-    <button class='btn_op'>=</button>
-    <button>?</button>
-  </view>
-  <view>
-    <button>?</button>
-    <button class='btn_op'>+</button>
-    <button>?</button>
-    <button class='btn_op'>=</button>
-    <button>24</button>
-  </view>      
+  </view>  
 </view>
